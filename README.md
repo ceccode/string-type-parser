@@ -2,6 +2,11 @@
 
 Micro library guessing type from string content. Usefull when importng from a csv or from JSON.parse().
 
+[![Build Status](https://travis-ci.org/ceccode/string-type-parser.svg?branch=master)](https://travis-ci.org/ceccode/string-type-parser)
+[![Known Vulnerabilities](https://snyk.io/test/github/ceccode/string-type-parser/badge.svg)](https://snyk.io/test/github/ceccode/string-type-parser)
+[![https://david-dm.org/ceccode/string-type-parser.svg](https://david-dm.org/ceccode/string-type-parser.svg)](https://david-dm.org/ceccode/string-type-parser.svg)
+
+
 ## Installation
 
 ```
