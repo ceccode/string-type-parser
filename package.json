@@ -1,0 +1,30 @@
+{
+  "name": "json-type-parser",
+  "version": "0.0.1",
+  "description": "Parse json",
+  "scripts": {
+    "start": "node index.js",
+    "test": "NODE_ENV=test mocha ./test/*.js",
+    "test-travis": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "*",
+    "mocha": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ceccode/json-type-parser"
+  },
+  "keywords": [
+    "json",
+    "parse"
+  ],
+  "author": "Francesco <falanga.fra@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ceccode/json-type-parser/issues"
+  },
+  "homepage": "https://github.com/ceccode/json-type-parser"
+}
