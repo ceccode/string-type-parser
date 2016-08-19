@@ -1,17 +1,17 @@
-# json-type-parser
+# string-type-parser
 
-Json type parser. Micro library guessing type from string content. Usefull when importng from a csv or from JSON.parse().
+Micro library guessing type from string content. Usefull when importng from a csv or from JSON.parse().
 
 ## Installation
 
 ```
-npm install json-type-parser --save
+npm install string-type-parser --save
 ```
 
 ## Usage
 
 ```
-const jsonTypeParser = require('json-type-parser');
+const stringTypeParser = require('string-type-parser');
 
 const obj = {
     date: '2016-08-17',
@@ -21,7 +21,7 @@ const obj = {
     date_malformed 'foo-bar 2014'
 };
 
-const result = jsonTypeParser.parse(obj);
+const result = stringTypeParser.parse(obj);
 
 /*
  * result.date // December 17, 1995 03:24:00; typeof Ddte
@@ -40,10 +40,10 @@ parse(obj)
 ### Usage
 
 ```
-const jsonTypeParser = require('json-type-parser');
+const stringTypeParser = require('string-type-parser');
 
-const result = jsonTypeParser.parse({age: '28'}); // {age: 28}
-const result = jsonTypeParser.parse(); // {}
+const result = stringTypeParser.parse({age: '28'}); // {age: 28}
+const result = stringTypeParser.parse(); // {}
 
 ```
 

@@ -1,1 +1,1 @@
-module.exports = require('./lib/json-type-parser.js');
+module.exports = require('./lib/string-type-parser.js');

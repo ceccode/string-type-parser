@@ -1,5 +1,5 @@
 {
-  "name": "json-type-parser",
+  "name": "string-type-parser",
   "version": "0.0.1",
   "description": "Parse json",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ceccode/json-type-parser"
+    "url": "https://github.com/ceccode/string-type-parser"
   },
   "keywords": [
     "json",
@@ -24,7 +24,7 @@
   "author": "Francesco <falanga.fra@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ceccode/json-type-parser/issues"
+    "url": "https://github.com/ceccode/string-type-parser/issues"
   },
-  "homepage": "https://github.com/ceccode/json-type-parser"
+  "homepage": "https://github.com/ceccode/string-type-parser"
 }

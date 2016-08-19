@@ -2,7 +2,7 @@
 
 const assert = require('chai').assert;
 
-const jsonParser = require('../lib/json-type-parser.js');
+const stringParser = require('../lib/string-type-parser.js');
 
 describe('can parse json object', () => {
 
@@ -12,7 +12,7 @@ describe('can parse json object', () => {
       a: 'a',
       b: 'b',
     };
-    const result = jsonParser.parse(obj);
+    const result = stringParser.parse(obj);
 
     assert.typeOf(result, 'object');     
     assert.deepEqual(result, obj); 
@@ -22,7 +22,7 @@ describe('can parse json object', () => {
   it('should return {} if input is invalid', () => {
 
     const obj = null;
-    const result = jsonParser.parse(obj);
+    const result = stringParser.parse(obj);
 
     assert.typeOf(result, 'object');
     assert.deepEqual(result, {});
@@ -39,7 +39,7 @@ describe('can parse json object', () => {
       date_utc: '2011-04-11T10:20:30Z',        
     };
 
-    const result = jsonParser.parse(obj);
+    const result = stringParser.parse(obj);
 
     assert.typeOf(result.date, 'date'); 
     assert.deepEqual(result.date, new Date('Wed, 17 Aug 2016 00:00:00 GMT'));
@@ -72,7 +72,7 @@ describe('can parse json object', () => {
       invalid_date: '2014 foo',
     };
 
-    const result = jsonParser.parse(obj);
+    const result = stringParser.parse(obj);
 
     assert.typeOf(result.invalid_non_iso_date, 'string'); 
     assert.equal(result.invalid_non_iso_date, '23/25/2014');
@@ -97,7 +97,7 @@ describe('can parse json object', () => {
       i_am_a_falsy_bool_uc: 'FALSE'
     };
 
-    const result = jsonParser.parse(obj);
+    const result = stringParser.parse(obj);
 
     assert.typeOf(result, 'object');
     assert.typeOf(result.i_am_a_bool, 'boolean');        
@@ -124,7 +124,7 @@ describe('can parse json object', () => {
       
 
     };
-    const result = jsonParser.parse(obj);
+    const result = stringParser.parse(obj);
 
     assert.typeOf(result.int_num, 'number');  
     assert.equal(result.int_num, 23593);   
